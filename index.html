@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6e5a864f82.js" crossorigin="anonymous"></script>
+    <title>Veterinaria</title>
+</head>
+
+<body>
+    <button id="mostrar-formulario-btn" onclick="mostrarFormulario()">Agendar Cita</button>
+
+    <div class="container">
+        <h2>Registro de Citas</h2>
+        <div class="form-group">
+            <label for="nombre-mascota">Nombre de la Mascota:</label>
+            <input type="text" id="nombre-mascota" placeholder="Nombre de la mascota">
+        </div>
+        <div class="form-group">
+            <label for="propietario">Propietario:</label>
+            <input type="text" id="propietario" placeholder="Nombre del propietario">
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Teléfono del propietario">
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha">
+        </div>
+        <div class="form-group">
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora">
+        </div>
+        <div class="form-group">
+            <label for="tipo-mascota">Tipo de Mascota:</label>
+            <select id="tipo-mascota">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="ave">Ave</option>
+                <option value="reptil">Reptil</option>
+                <option value="pez">Pez</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sintomas">Síntomas:</label>
+            <textarea id="sintomas" placeholder="Describa los síntomas"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado:</label>
+            <select id="estado">
+                <option value="abierta">Abierta</option>
+                <option value="finalizada">Finalizada</option>
+                <option value="anulada">Anulada</option>
+            </select>
+        </div>
+        <button id="enviar-btn" onclick="imprimircard()">Enviar</button>
+    </div>
+
+    <div class="contenido">
+        <div class="contenedor" id="contenedor">
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

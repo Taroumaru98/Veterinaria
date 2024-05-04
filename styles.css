@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: none;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contenido {
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: space-around;
+    padding: 20px;
+    width: 80%;
+}
+
+.card {
+    flex-basis: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.card p {
+    color: #261C1D;
+}
+
+.card button {
+    display: block;
+    margin: 0 auto;
+    background-color: #E4A8B5;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #893938;
+    color: #fff;
+}
